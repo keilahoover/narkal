@@ -4,5 +4,7 @@ body {
 }
 
 a {
+  border: solid black 1px;
   color: #00B7FF;
+  text-decoration: none;
 }
