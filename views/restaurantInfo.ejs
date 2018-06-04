@@ -40,13 +40,13 @@
     <form class="expense">
       <p>Expense Level</p>
       <label for="expense__1">$</label>
-      <input type="checkbox" class="expense__1">
+      <input type="radio" name="expense-level" value="level-one" id="expense__1">
       <label for="expense__2">$$</label>
-      <input type="checkbox" class="expense__2">
+      <input type="radio" name="expense-level" value="level-two" id="expense__2">
       <label for="expense__3">$$$</label>
-      <input type="checkbox" class="expense__3">
+      <input type="radio" name="expense-level" value="level-three" id="expense__3">
       <label for="expense__4">$$$$</label>
-      <input type="checkbox" class="expense__4">
+      <input type="radio" name="expense-level" value="level-four" id="expense__4">
     </form>
     <!-- add action="file path" -->
     <form class="menu">
@@ -54,6 +54,10 @@
       <input type="file" class="menu__file">
       <input type="submit" class="menu__submit" accept="image/*">
     </form>
+  </section>
+
+  <section>
+    <button>Next ></button>
   </section>
 </body>
 
