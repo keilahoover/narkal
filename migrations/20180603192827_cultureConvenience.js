@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
       table.boolean('kidFriendly').notNullable().defaultTo(false);
       table.boolean('petFriendly').notNullable().defaultTo(false);
       table.boolean('largePartyAccess').notNullable().defaultTo(false);
-      table.boolean('transgenderRestroom').notNullable().defaultTo(false);
+      table.boolean('genderNeutralRestroom').notNullable().defaultTo(false);
       table.boolean('reservations').notNullable().defaultTo(false);
       table.boolean('wifiAvailable').notNullable().defaultTo(false);
       table.boolean('barArea').notNullable().defaultTo(false);
