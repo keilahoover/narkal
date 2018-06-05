@@ -4,7 +4,10 @@ const createError = require('http-errors')
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
+const cookieSession = require('cookie-session')
 const bodyParser = require('body-parser');
+const passport = require('passport')
+const FacebookStrategy = require('passport-facebook').Strategy
 const logger = require('morgan');
 require('dotenv').config(); // require and init
 const indexRouter = require('./routes/index');
@@ -24,6 +27,33 @@ const app = express();
 //view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+app.use(passport.initialize())
+passport.use(new FacebookStrategy(
+  {
+    clientID: '170539890307175',
+    clientSecret: 'eec4a6c13f6fad6b3c9a3cbbf327017d',
+    callbackURL: 'http://localhost:8080/facebook/callback',
+    userAgent: 'Narkal'
+  },
+
+  // will be filled in later
+  function onSuccessfulLogin(token, refreshToken, profile, done) {
+    console.log(profile)
+    done(null, { token })
+  }
+))
+
+app.use(cookieSession({ secret: 'My super secret' }))
+app.use(passport.session())
+
+passport.serializeUser((object, done) => {
+  done(null, { token: object.token })
+})
+
+passport.deserializeUser((object, done) => {
+  done(null, object)
+})
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
