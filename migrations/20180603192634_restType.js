@@ -1,8 +1,8 @@
 
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable('restType', function(table){
+  return knex.schema.createTable('rest_type', function(table){
       table.increments();
-      table.integer('restUsers_id').notNullable().references('restUsers.id').onDelete('CASCADE');
+      table.integer('restaurant_id').notNullable().references('restaurant.id').onDelete('CASCADE');
       table.boolean('counterService').notNullable().defaultTo(false);
       table.boolean('sitDown').notNullable().defaultTo(false);
       table.boolean('cafe').notNullable().defaultTo(false);
@@ -14,10 +14,10 @@ exports.up = function(knex, Promise) {
       table.boolean('healthFoodGrocery').notNullable().defaultTo(false);
       table.boolean('fruitVeggieStand').notNullable().defaultTo(false);
       table.boolean('petFood').notNullable().defaultTo(false);
-      table.boolean('dispensaryTabacco').notNullable().defaultTo(false);
+      table.boolean('dispensaryTobacco').notNullable().defaultTo(false);
   })
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists('restType');
+  return knex.schema.dropTableIfExists('rest_type');
 };

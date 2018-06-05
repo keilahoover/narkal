@@ -1,4 +1,9 @@
-'use strict';
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+var handlebars = require('handlebars')
+const jwt = require('jsonwebtoken')
 
 const createError = require('http-errors')
 const express = require('express');

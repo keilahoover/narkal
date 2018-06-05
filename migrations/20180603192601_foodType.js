@@ -1,8 +1,8 @@
 
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable('foodType', function(table){
+  return knex.schema.createTable('food_type', function(table){
       table.increments();
-      table.integer('restUsers_id').notNullable().references('restUsers.id').onDelete('CASCADE');
+      table.integer('restaurant_id').notNullable().references('restaurant.id').onDelete('CASCADE');
       table.boolean('chinese').notNullable().defaultTo(false);
       table.boolean('japanese').notNullable().defaultTo(false);
       table.boolean('thai').notNullable().defaultTo(false);
@@ -18,5 +18,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists('foodType');
+  return knex.schema.dropTableIfExists('food_type');
 };
