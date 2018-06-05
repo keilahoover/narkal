@@ -1,8 +1,8 @@
 
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable('foodAllergies', function(table){
+  return knex.schema.createTable('food_allergies', function(table){
       table.increments();
-      table.integer('restUsers_id').notNullable().references('restUsers.id').onDelete('CASCADE');
+      table.integer('restaurant_id').notNullable().references('restaurant.id').onDelete('CASCADE');
       table.boolean('soy').notNullable().defaultTo(false);
       table.boolean('dairy').notNullable().defaultTo(false);
       table.boolean('peanut').notNullable().defaultTo(false);
@@ -13,5 +13,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists('foodAllergies');
+  return knex.schema.dropTableIfExists('food_allergies');
 };

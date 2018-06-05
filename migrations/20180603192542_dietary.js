@@ -2,14 +2,14 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('dietary', function(table){
       table.increments();
-      table.integer('restUsers_id').notNullable().references('restUsers.id').onDelete('CASCADE');
-      table.boolean('100FarmToTable').notNullable().defaultTo(false);
+      table.integer('restaurant_id').notNullable().references('restaurant.id').onDelete('CASCADE');
+      table.boolean('allFarmToTable').notNullable().defaultTo(false);
       table.boolean('FarmToTableFocus').notNullable().defaultTo(false);
-      table.boolean('100Vegan').notNullable().defaultTo(false);
+      table.boolean('allVegan').notNullable().defaultTo(false);
       table.boolean('veganMenuOptions').notNullable().defaultTo(false);
-      table.boolean('100Vegetarian').notNullable().defaultTo(false);
+      table.boolean('allVegetarian').notNullable().defaultTo(false);
       table.boolean('vegetarianMenuOptions').notNullable().defaultTo(false);
-      table.boolean('100Organic').notNullable().defaultTo(false);
+      table.boolean('allOrganic').notNullable().defaultTo(false);
       table.boolean('organicMenuOptions').notNullable().defaultTo(false);
       table.boolean('gfMenu').notNullable().defaultTo(false);
       table.boolean('paleoMenu').notNullable().defaultTo(false);
