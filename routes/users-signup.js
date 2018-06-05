@@ -10,6 +10,7 @@ router.get('/', (req, res, next) => {
     })
   }).catch((err) => `User sign in error --> ${err}`)
 })
+
 router.post('/', (req, res, next) => {
   const id = document.getElementById('rest')
   if (id === 'user') {
