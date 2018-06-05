@@ -13,3 +13,5 @@ router.get('/', (req, res, next) => {
     })
     .catch((err) => `No Restaurant Genres --> ${err}`)
 })
+
+module.exports = router;

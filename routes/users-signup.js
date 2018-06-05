@@ -3,15 +3,15 @@ const router = express.Router();
 const knex = require('../knex');
 
 router.get('/', (req, res, next) => {
-  knex('specialties')
+  knex('users')
     .select('*')
-    .then((specials) => {
-      res.render('restType', {
-        title: 'Specialties',
-        specials
+    .then((info) => {
+      res.render('sign-up', {
+        title: 'User Sign Up',
+        info
       })
     })
-    .catch((err) => `No Specialties --> ${err}`)
+    .catch((err) => `User sign in error --> ${err}`)
 })
 
 module.exports = router;

@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express');
 const router = express.Router();
 const knex = require('../knex');
@@ -13,3 +15,5 @@ router.get('/', (req, res, next) => {
     })
     .catch((err) => `No Food Genres --> ${err}`)
 })
+
+module.exports = router;

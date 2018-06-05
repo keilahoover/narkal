@@ -13,3 +13,5 @@ router.get('/', (req, res, next) => {
     })
     .catch((err) => `No Details --> ${err}`)
 })
+
+module.exports = router;

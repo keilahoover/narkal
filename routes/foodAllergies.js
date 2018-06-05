@@ -13,3 +13,5 @@ router.get('/', (req, res, next) => {
     })
     .catch((err) => `No Food Allergies --> ${err}`)
 })
+
+module.exports = router;

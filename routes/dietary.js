@@ -13,3 +13,5 @@ router.get('/', (req, res, next) => {
     })
     .catch((err) => `No Dietary Info --> ${err}`)
 })
+
+module.exports = router;
