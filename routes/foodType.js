@@ -5,10 +5,10 @@ const router = express.Router();
 const knex = require('../knex');
 
 router.get('/', (req, res, next) => {
-  knex('foodType')
+  knex('food_type')
     .select('*')
     .then((types) => {
-      res.render('foodType', {
+      res.render('food-type', {
         title: 'Food Genres',
         types
       })

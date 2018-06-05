@@ -3,10 +3,13 @@ const router = express.Router();
 const knex = require('../knex');
 
 router.get('/', (req, res, next) => {
-  knex('restuser').select('*').then((info) => {
-    res.render('sign-up', {
-      title: 'Restaurant Sign Up',
-      info
+  knex('restusers')
+    .select('*')
+    .then((info) => {
+      res.render('sign-up', {
+        title: 'Restaurant Sign Up',
+        info
+      })
     })
   }).catch((err) => `Restaurant sign in error --> ${err}`)
 })
