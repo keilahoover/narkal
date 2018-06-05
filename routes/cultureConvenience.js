@@ -3,10 +3,10 @@ const router = express.Router();
 const knex = require('../knex');
 
 router.get('/', (req, res, next) => {
-  knex('cultureConvenience')
+  knex('culture_convenience')
     .select('*')
     .then((info) => {
-      res.render('cultureConvenience', {
+      res.render('culture-convenience', {
         title: 'Culture & Convenience',
         info
       })

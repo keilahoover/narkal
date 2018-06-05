@@ -3,10 +3,10 @@ const router = express.Router();
 const knex = require('../knex');
 
 router.get('/', (req, res, next) => {
-  knex('restType')
+  knex('rest_type')
     .select('*')
     .then((types) => {
-      res.render('restType', {
+      res.render('restaurant-type', {
         title: 'Restaurant Genres',
         types
       })

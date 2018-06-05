@@ -3,7 +3,7 @@ const router = express.Router();
 const knex = require('../knex');
 
 router.get('/', (req, res, next) => {
-  knex('restuser')
+  knex('restusers')
     .select('*')
     .then((info) => {
       res.render('sign-up', {

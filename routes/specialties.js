@@ -6,7 +6,7 @@ router.get('/', (req, res, next) => {
   knex('specialties')
     .select('*')
     .then((specials) => {
-      res.render('restType', {
+      res.render('specialties', {
         title: 'Specialties',
         specials
       })

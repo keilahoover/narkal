@@ -2,6 +2,7 @@
 
 const jwt = require('jsonwebtoken');
 const createError = require('http-errors');
+const axios = require('axios')
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -64,8 +65,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users-signup', usersSignUpRouter);
-app.use('/restaurant-signup', restaurantSignUpRouter);
+app.use('/signup', usersSignUpRouter);
+app.use('/signup', restaurantSignUpRouter);
 app.use('/restaurant-info', restaurantInfoRouter)
 app.use('/restaurant-profile', restaurantProfileRouter);
 app.use('/restaurant-type', restTypeRouter)

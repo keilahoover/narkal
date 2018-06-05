@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 router.get('/facebook', passport.authenticate('facebook'))
 
 router.get('/restaurant-profile', (req, res, next) => {
-  res.render('restaurantProfile', { title: 'Welcome, Narkal!'})
+  res.render('restaurant-profile', { title: 'Welcome, Narkal!'})
 })
 
 router.get('/facebook/callback', passport.authenticate('facebook', { successRedirect: '/restaurant-profile', failureRedirect: '/' }))
