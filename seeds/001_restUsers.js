@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
           id: 1,
           first_name: 'Madam',
           last_name: 'Rosmerta',
-          restuseremail: 'rosmertabrooms@gmail.com',
+          email: 'rosmertabrooms@gmail.com',
           hashed_password: '$2a$12$C9AYYmcLVGYlGoO4vSZTPud9ArJwbGRsJ6TUsNULzR48z8fOnTXbS'  // youreawizard
         }])
         .then(function() {
