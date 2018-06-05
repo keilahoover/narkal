@@ -2,7 +2,7 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('specialties', function(table){
       table.increments();
-      table.integer('restUsers_id').notNullable().references('restUsers.id').onDelete('CASCADE');
+      table.integer('restaurant_id').notNullable().references('restaurant.id').onDelete('CASCADE');
       table.boolean('pizza').notNullable().defaultTo(false);
       table.boolean('burgers').notNullable().defaultTo(false);
       table.boolean('breakfastBrunch').notNullable().defaultTo(false);
