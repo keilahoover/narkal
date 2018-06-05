@@ -1,23 +1,19 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var handlebars = require('handlebars')
-const jwt = require('jsonwebtoken')
+'use strict';
 
-const createError = require('http-errors')
+const jwt = require('jsonwebtoken');
+const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const cookieSession = require('cookie-session')
+const cookieSession = require('cookie-session');
 const bodyParser = require('body-parser');
-const passport = require('passport')
-const FacebookStrategy = require('passport-facebook').Strategy
+const passport = require('passport');
+const FacebookStrategy = require('passport-facebook').Strategy;
 const logger = require('morgan');
 require('dotenv').config(); // require and init
 const indexRouter = require('./routes/index');
 const usersSignUpRouter = require('./routes/users-signup');
-const restaurantSignUpRouter = require('./routes/restaurant-signup')
+const restaurantSignUpRouter = require('./routes/restaurant-signup');
 const restaurantInfoRouter = require('./routes/restaurantInfo');
 const restaurantProfileRouter = require('./routes/restaurant-profile');
 const restTypeRouter = require('./routes/restType');
