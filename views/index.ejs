@@ -10,14 +10,31 @@
 </head>
 
 <body>
-  <div id="map"></div>
-  <button class="social_btn"><a href="./facebook"><i class="fab fa-facebook-square"></i>Join with Facebook</a></button>
-  <button><a href="./restaurant-profile">Next ></button>
+  <h1 class="logo">NARKAL</h1>
+  <section class="sign-up">
+    <form class="form" method="post" action="./restaurant-profile">
+      <label for="sign-up__email">Email</label>
+      <input type="email" placeholder="narkal@me.com" value="email" class="sign-up__email">
+      <label for="sign-up__password">Password</label>
+      <input type="password" placeholder="password" value="password" class="sign-up__password">
+      <input type="submit" value="OK">
+    </form>
   </section>
-  <section id="map-container">
+  <section>
+    <!-- <form class="form" method="POST" action="./routes/users-signup">
+      <label for="sign-up__email">Email</label>
+      <input type="email" placeholder="narkal@me.com" value="email" class="sign-up__email">
+      <label for="sign-up__password">Password</label>
+      <input type="password" placeholder="password" value="password" class="sign-up__password">
+      <button type="submit" id="user">user login</button>
+    </form> -->
+  </section>
     <div id="map">
-      <img id="map-marker" src="/images/narkle_marker.png" />
     </div>
+  <section>
+    <img id="map-marker" src="/images/narkle_marker.png" />
+    <button class="social_btn"><a href="./facebook"><i class="fab fa-facebook-square"></i>Join with Facebook</a></button>
+    <button><a href="./restaurant-profile">Next ></button>
   </section>
   <script>
     var map;
@@ -28,53 +45,47 @@
           lat: -34.397,
           lng: 150.644
         },
-        zoom: 8
+        zoom: 6
       });
-
-      // marker = new google.maps.Marker({
-      //     position: map.center,
-      //     map: map
-      //   })
-
-      Marker = new google.maps.Marker(document.getElementById('#map-marker'), {
-        position: map.center,
-        map: map,
-        icon: image
-      });
-
       infoWindow = new google.maps.InfoWindow;
 
-    //
-    // if (navigator.geolocation) {
-    //   navigator.geolocation.getCurrentPosition(function(position) {
-    //     var pos = {
-    //       lat: position.coords.latitude,
-    //       lng: position.coords.longitude
-    //     };
-    //
-    //     infoWindow.setPosition(pos);
-    //     infoWindow.setContent('Location found.');
-    //     infoWindow.open(map);
-    //     map.setCenter(pos);
-    //   }, function() {
-    //     handleLocationError(true, infoWindow, map.getCenter());
-    //   });
-    // } else {
-    //   // Browser doesn't support Geolocation
-    //   handleLocationError(false, infoWindow, map.getCenter());
-    // }
-    // }
-    //
-    // function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    //   infoWindow.setPosition(pos);
-    //   infoWindow.setContent(browserHasGeolocation ?
-    //     'Error: The Geolocation service failed.' :
-    //     'Error: Your browser doesn\'t support geolocation.');
-    //   infoWindow.open(map);
-    // }
-  }
+      // Try HTML5 geolocation.
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+
+          infoWindow.setPosition(pos);
+          infoWindow.setContent('Location found.');
+          infoWindow.open(map);
+          map.setCenter(pos);
+        }, function() {
+          handleLocationError(true, infoWindow, map.getCenter());
+        });
+      } else {
+        // Browser doesn't support Geolocation
+        handleLocationError(false, infoWindow, map.getCenter());
+      }
+    }
+
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+      infoWindow.setPosition(pos);
+      infoWindow.setContent(browserHasGeolocation ?
+        'Error: The Geolocation service failed.' :
+        'Error: Your browser doesn\'t support geolocation.');
+      infoWindow.open(map);
+    }
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSt9xzoEQLQCHhIxf7ITb7XuxyUaDyAo&callback=initMap" async defer></script>
 </body>
 
 </html>
+
+<!--
+      // Marker = new google.maps.Marker(document.getElementById('#map-marker'), {
+      //   position: map.center,
+      //   map: map,
+      //   icon: image
+      // }); -->
