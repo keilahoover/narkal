@@ -13,6 +13,8 @@ exports.up = function(knex, Promise) {
       table.boolean('barArea').notNullable().defaultTo(false);
       table.boolean('patioOutdoor').notNullable().defaultTo(false);
       table.boolean('firePits').notNullable().defaultTo(false);
+      table.boolean('toGo').notNullable().defaultTo(false);
+      table.boolean('delivery').notNullable().defaultTo(false);
   })
 };
 

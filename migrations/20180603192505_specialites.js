@@ -11,6 +11,10 @@ exports.up = function(knex, Promise) {
       table.boolean('kombucha').notNullable().defaultTo(false);
       table.boolean('saladBarBuffet').notNullable().defaultTo(false);
       table.boolean('happyHour').notNullable().defaultTo(false);
+      table.boolean('coffee').notNullable().defaultTo(false);
+      table.boolean('steakHouse').notNullable().defaultTo(false);
+      table.boolean('sushi').notNullable().defaultTo(false);
+      table.boolean('sandwiches').notNullable().defaultTo(false);
   })
 };
 

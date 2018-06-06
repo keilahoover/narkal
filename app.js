@@ -12,6 +12,8 @@ const FacebookStrategy = require('passport-facebook').Strategy;
 const logger = require('morgan');
 require('dotenv').config(); // require and init
 const indexRouter = require('./routes/index');
+const userlogin = require('./routes/user-login');
+const restlogin = require('./routes/rest-login');
 const usersSignUpRouter = require('./routes/users-signup');
 const restaurantSignUpRouter = require('./routes/restaurant-signup');
 const restaurantInfoRouter = require('./routes/restaurantInfo');
@@ -64,6 +66,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/user-login', userlogin);
+app.use('/rest-login', restlogin);
 app.use('/signup', usersSignUpRouter);
 app.use('/signup', restaurantSignUpRouter);
 app.use('/restaurant-info', restaurantInfoRouter)
