@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Restaurant Sign Up</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <% include ./head %>
+
+</head>
+
+<body>
+  <h1 class="logo">RESTAURANT SIGN UP</h1>
+  <section class="signup" id="signup">
+    <form class="form__signup" id="form__signup" method="post" action="/">
+      <label for="signup__first-name">First Name</label>
+      <input type="text" placeholder="First Name" class="signup__first-name" id="signup__first-name">
+      <label for="signup__last-name">Last Name</label>
+      <input type="text" placeholder="Last Name" class="signup__last-name" id="signup__last-name">
+      <label for="signup__email">Email</label>
+      <input type="email" placeholder="narkal@me.com" class="signup__email" id="signup__email">
+      <label for="signup__password">Password</label>
+      <input type="password" placeholder="password" class="signup__password" id="login__password">
+      <input class="login__btn" id="login__btn" type="submit" value="Sign In">
+    </form>
+  </section>
+  <script src="javascripts/rest-signup.js"></script>
+</body>
+</html>
