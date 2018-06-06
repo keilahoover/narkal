@@ -12,9 +12,6 @@ router.get('/', (req, res, next) => {
       })
       .catch((err) => `Restaurant sign in error --> ${err}`)
     })
-  })
-
-
-
+})
 
 module.exports = router;
