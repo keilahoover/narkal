@@ -11,30 +11,20 @@
 
 <body>
   <h1 class="logo">NARKAL</h1>
-  <section class="sign-up">
-    <form class="form" method="post" action="./restaurant-profile">
-      <label for="sign-up__email">Email</label>
-      <input type="email" placeholder="narkal@me.com" value="email" class="sign-up__email">
-      <label for="sign-up__password">Password</label>
-      <input type="password" placeholder="password" value="password" class="sign-up__password">
-      <input type="submit" value="OK">
-    </form>
+  <section class="rest-container">
+    <h4>RESTAURANT</h4>
+    <button class="rest__signIn"><a href="./restaurant-signin">Sign In</a></button>
   </section>
-  <section>
-    <!-- <form class="form" method="POST" action="./routes/users-signup">
-      <label for="sign-up__email">Email</label>
-      <input type="email" placeholder="narkal@me.com" value="email" class="sign-up__email">
-      <label for="sign-up__password">Password</label>
-      <input type="password" placeholder="password" value="password" class="sign-up__password">
-      <button type="submit" id="user">user login</button>
-    </form> -->
+  <section class="user-container">
+    <h4>USER</h4>
+    <button class="user__signIn">Sign In</button>
   </section>
     <div id="map">
     </div>
   <section>
     <img id="map-marker" src="/images/narkle_marker.png" />
     <button class="social_btn"><a href="./facebook"><i class="fab fa-facebook-square"></i>Join with Facebook</a></button>
-    <button><a href="./restaurant-profile">Next ></button>
+    <button><a href="./restaurant-profile">Next ></a></button>
   </section>
   <script>
     var map;
@@ -45,7 +35,7 @@
           lat: -34.397,
           lng: 150.644
         },
-        zoom: 6
+        zoom: 8
       });
       infoWindow = new google.maps.InfoWindow;
 
@@ -89,3 +79,12 @@
       //   map: map,
       //   icon: image
       // }); -->
+
+
+      <!-- <form class="form" method="POST" action="./routes/users-signup">
+        <label for="sign-up__email">Email</label>
+        <input type="email" placeholder="narkal@me.com" value="email" class="sign-up__email">
+        <label for="sign-up__password">Password</label>
+        <input type="password" placeholder="password" value="password" class="sign-up__password">
+        <button type="submit" id="user">user login</button>
+      </form> -->

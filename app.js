@@ -24,6 +24,8 @@ const dietaryRouter = require('./routes/dietary');
 const allergiesRouter = require('./routes/foodAllergies');
 const foodTypeRouter = require('./routes/foodType');
 const specialtiesRouter = require('./routes/specialties');
+const restaurantSignInRouter = require('./routes/restaurant-signin');
+
 
 const app = express();
 
@@ -78,6 +80,8 @@ app.use('/dietary', dietaryRouter);
 app.use('/food-allergies', allergiesRouter);
 app.use('/food-type', foodTypeRouter);
 app.use('/specialties', specialtiesRouter);
+app.use('/restaurant-signin', restaurantSignInRouter);
+
 
 const port = process.env.PORT || 8080;
 

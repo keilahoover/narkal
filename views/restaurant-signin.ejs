@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Narkal</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <script src="javascripts/rest-login.js"></script>
+  <% include ./head %>
+
+</head>
+
+<body>
+  <h1 class="logo">RESTAURANT SIGN IN</h1>
+  <section class="login" id="login">
+    <form class="form__login" id="form__login" method="post" action="./restaurant-profile">
+      <label for="login__email">Email</label>
+      <input type="email" placeholder="narkal@me.com" value="email" class="login__email">
+      <label for="login__password">Password</label>
+      <input type="password" placeholder="password" value="password" class="login__password">
+      <input class="login__btn" id="login__btn" type="submit" value="OK">
+    </form>
+  </section>
