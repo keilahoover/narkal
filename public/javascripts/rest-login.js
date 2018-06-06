@@ -32,26 +32,9 @@ $(document).ready(function() {
       console.log('oing things');
       window.location.href = "/"
     }).fail(($xhr) => {
-      console.log($xhr.responseText);
-      console.log('i am here')
       window.location.href = "/restaurant-profile";
       // alert($xhr.responseText)
     })
-
-    // $.ajax({
-    //   url: '/restaurant-profile',
-    //   type: 'GET',
-    //   success: (data) => {
-    //     console.log('hello');
-    //     // if (data === 'login') {
-    //     //   $('#hostEventButton').attr('href', '/login')
-    //     //   $('#dash-link').attr('class', 'hidden')
-    //     // } else if (data === 'signout') {
-    //     //   $('#hostEventButton').attr('href', '/host')
-    //     // }
-    //   }
-    // })
-
   })
 
 })
