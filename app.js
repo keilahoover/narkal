@@ -2,7 +2,6 @@
 
 const jwt = require('jsonwebtoken');
 const createError = require('http-errors');
-const axios = require('axios')
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');

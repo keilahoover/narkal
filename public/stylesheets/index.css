@@ -1,7 +1,16 @@
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: 'Ubuntu', cursive;
 }
 
 #map {
-  height: 100%;
+  height: 50vh;
+  width: 50%;
+}
+
+#map-marker {
+  width: 15%;
 }
