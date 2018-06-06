@@ -7,9 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', (req, res, next) => {
+  console.log('hit the post route')
     knex('restusers')
     .where('email', req.body.email).then((data) => {
       if (data.length > 0) {
+        console.log(data.length)
         const restUser = {
           id: data[0].id,
           email: data[0].email
