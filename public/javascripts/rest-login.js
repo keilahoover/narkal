@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('#login__btn').submit((event) => {
     event.preventDefault();
 
-    const email = $('#login__email').val().trim();
+    const email_address = $('#login__email').val().trim();
     const password = $('#login__password').val();
 
     if (!email) {
@@ -17,7 +17,7 @@ $(document).ready(function() {
     }
 
     const user = {
-      "email_address": email,
+      "email": email_address,
       "password": password
     }
 
@@ -26,7 +26,7 @@ $(document).ready(function() {
       data: JSON.stringify(user),
       dataType: 'json',
       type: 'POST',
-      url: '/'
+      url: '/restaurant-signin'
     }
 
     $.ajax(options)
