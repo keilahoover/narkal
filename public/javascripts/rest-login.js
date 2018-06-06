@@ -2,17 +2,16 @@ $(document).ready(function() {
   'use strict';
 
   // eslint-disable-next-line max-statements
-  $('#login__btn').submit((event) => {
+  $('#form__login').submit((event) => {
     event.preventDefault();
-
     const email_address = $('#login__email').val().trim();
     const password = $('#login__password').val();
 
-    if (!email) {
+    if (!email_address) {
       return alert('Email must not be blank');
     }
 
-    if (email.indexOf('@') < 0) {
+    if (email_address.indexOf('@') < 0) {
       return alert('Email must be valid');
     }
 
@@ -29,11 +28,30 @@ $(document).ready(function() {
       url: '/restaurant-signin'
     }
 
-    $.ajax(options)
-      .done(function() {
-        window.location.href = "/"
-      })
-      .fail(($xhr) => {
-        alert($xhr.responseText)
-      })
+    $.ajax(options).done(function() {
+      console.log('oing things');
+      window.location.href = "/"
+    }).fail(($xhr) => {
+      console.log($xhr.responseText);
+      console.log('i am here')
+      window.location.href = "/restaurant-profile";
+      // alert($xhr.responseText)
+    })
+
+    // $.ajax({
+    //   url: '/restaurant-profile',
+    //   type: 'GET',
+    //   success: (data) => {
+    //     console.log('hello');
+    //     // if (data === 'login') {
+    //     //   $('#hostEventButton').attr('href', '/login')
+    //     //   $('#dash-link').attr('class', 'hidden')
+    //     // } else if (data === 'signout') {
+    //     //   $('#hostEventButton').attr('href', '/host')
+    //     // }
+    //   }
+    // })
+
   })
+
+})

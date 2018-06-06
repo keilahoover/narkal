@@ -1,12 +1,12 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://awray:doot@localhost:5433/narkal_dev'
+    connection: 'postgres://localhost/narkal_dev'
   },
 
     test: {
       client: 'pg',
-      connection: 'postgres://awray:doot@localhost:5433/narkal_test'
+      connection: 'postgres://localhost/narkal_test'
   },
 
   production: {
