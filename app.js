@@ -71,7 +71,7 @@ app.use('/', indexRouter);
 app.use('/user-login', userlogin);
 app.use('/rest-login', restlogin);
 app.use('/signup', usersSignUpRouter);
-app.use('/signup', restaurantSignUpRouter);
+app.use('/restaurant-signup', restaurantSignUpRouter);
 app.use('/restaurant-info', restaurantInfoRouter)
 app.use('/restaurant-profile', restaurantProfileRouter);
 app.use('/restaurant-type', restTypeRouter)
