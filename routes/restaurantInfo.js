@@ -2,13 +2,14 @@ const express = require('express');
 const router = express.Router();
 const knex = require('../knex');
 
-router.get('/', (req, res, next) => {
+router.get('/:uid', (req, res, next) => {
   knex('restaurant')
     .select('*')
     .then((info) => {
       res.render('restaurant-info', {
         title: 'Restaurant Details',
-        info
+        info,
+        uid: req.params.uid
       })
     })
     .catch((err) => `No Details --> ${err}`)
