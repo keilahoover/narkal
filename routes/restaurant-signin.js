@@ -26,11 +26,6 @@ router.post('/', (req, res, next) => {
           httpOnly: true
         })
         res.send(200);
-        // res.render('restaurant-profile', {
-        //   title: 'Narkal',
-        //   signinSuccess: true
-        // })
-        console.log('you logged in YAY!!!!!')
       } else {
         // log
         res.status(400).type('text/plain').send("Incorrect email or password");

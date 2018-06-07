@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
       table.increments();
       table.integer('restusers_id').notNullable().references('restusers.id').onDelete('CASCADE');
       table.varchar('restName').notNullable().defaultTo('');
-      table.varchar('restemail', 255).notNullable().unique();
+      table.varchar('email', 255).notNullable().unique();
       table.varchar('hoursOperation', 255).notNullable().unique();
       table.varchar('streetAddress', 255).notNullable().defaultTo('');
       table.varchar('city', 255).notNullable().defaultTo('');

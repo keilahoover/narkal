@@ -36,6 +36,7 @@ router.post('/', (req, res, next) => {
         last_name: user[0].last_name,
         email: user[0].email
       }
+      //res.setheaders w jwt 
       res.send(newObj);
     })
     .catch((err) => {
