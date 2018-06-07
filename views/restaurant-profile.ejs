@@ -15,68 +15,52 @@
       </article>
     </section>
     <main class="main-content">
-      <div class="line-break">
-        <hr class="line-break__hr">
-        <button class="line-break__btn"><i class="fa fa-angle-up" aria-hidden="true"></i>
-        </button>
-      </div>
       <div class="article-aside-wrap">
         <article class="main-content-article">
-          <div class="job-description__div job-description--color">
-              <h2 class="main-content__h2">JOB DESCRIPTION</h2>
-              <button class="main-content__btn" aria-label="edit-description"><i class="fa fa-pencil" aria-hidden="true"></i>EDIT</button>
+          <div class="restaurant-description__div restaurant-description--color">
+              <h2 class="main-content__h2">Shine Restaurant</h2>
+              <button class="main-content__btn" aria-label="edit-description"><i class="fas fa-pencil-alt"></i>EDIT</button>
           </div>
-          <div class="job-description__div">
-            <h2 class="main-content__h2">POSITION TITLE</h2>
-            <p class="main-content__p">Eel Fisherman</p>
-          </div>
-          <div class="job-description__div">
+          <div class="restaurant-description__div">
             <h2 class="main-content__h2">LOCATION</h2>
-            <p class="main-content__p">Rochestor, NY</p>
+            <p class="main-content__p">2480 Canyon Blvd, Boulder, CO 80302</p>
           </div>
-          <div class="job-description__div">
-            <h2 class="main-content__h2">EMPLOYMENT TYPE</h2>
-            <p class="main-content__p">Full-time</p>
+          <div class="restaurant-description__div">
+            <h2 class="main-content__h2">PHONE</h2>
+            <p class="main-content__p">303.449.0120</p>
           </div>
-          <div class="job-description__div">
-            <h2 class="main-content__h2">EXPERIENCE</h2>
-            <p class="main-content__p">High-level</p>
+          <div class="restaurant-description__div">
+            <h2 class="main-content__h2">EMAIL</h2>
+            <p class="main-content__p">sisters@shineboulder.com</p>
           </div>
-          <div class="job-description__div">
-            <h2 class="main-content__h2">STATUS</h2>
-            <p class="main-content__p">Open</p>
+          <div class="restaurant-description__div">
+            <h2 class="main-content__h2">HOURS</h2>
+            <p class="main-content__p">Monday-Friday 11AM - 10PM</p>
           </div>
-          <div class="job-description__div">
-            <h2 class="main-content__h2" id="description-target">DESCRIPTION</h2>
-            <p class="main-content__p">At froth java mug, coffee, seasonal robust french press spoon flavour to go single shot brewed mazagran ristretto. Lungo robust seasonal cup viennese iced acerbic chicory, mazagran est et, siphon dripper aged lungo cinnamon cream body. Qui aroma bar, viennese cappuccino mocha galão, eu, foam, café au lait cinnamon aromatic, sit turkish extra, sugar whipped extra, french.</p>
+          <div class="restaurant-description__div">
+            <h2 class="main-content__h2">EXPENSE LEVEL</h2>
+            <p class="main-content__p">$$$</p>
           </div>
-          <div class="job-description__div">
-            <h2 class="main-content__h2">HIRING LEAD</h2>
-            <figure class="main-content__figure">
-              <img class="main-content__img" src="img/emu-hiring-lead.jpg" alt="hiring-lead-profile">
-              <figcaption class="main-content__figcaption">Bertha</figcaption>
-            </figure>
-          </div>
-            <div class="job-description__div">
-            <h2 class="main-content__h2">APPROVED SALARY</h2>
-            <p>$200/EEL</p>
+          <div class="restaurant-description__div">
+            <h2 class="main-content__h2" id="description-target">HIGHLIGHTS</h2>
+            <p class="main-content__p">2018 Diner's Choice Award Winner</p>
+            <img id="main-content__img" src="images/diners_choice.png">
           </div>
         </article>
           <aside class="main-content__aside">
             <div class="social">
-              <button class="social__btn facebook"><i class="fa fa-facebook" aria-hidden="true"></i>Post to Facebook</button>
-              <button class="social__btn twitter"><i class="fa fa-twitter" aria-hidden="true"></i>Tweet this Job</button>
-              <button class="social__btn linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>Post to Linkedin</button>
+              <button class="social__btn facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i>Post to Facebook</button>
+              <button class="social__btn twitter"><i class="fab fa-twitter" aria-hidden="true"></i>Tweet this Job</button>
+              <button class="social__btn linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i>Post to Linkedin</button>
             </div>
             <div class="add-links__wrap">
-              <h3 class="add-links__h3"><i class="fa fa-globe" aria-hidden="true"></i>Link to this Job</h3>
-              <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on.</p>
-            <form role="form" class="aside__form">
-              <input type="text" placeholder="http://loremipsum.dol/sit.ameteur.io" aria-label="add-link-to-job">
-              <input type="submit" value="Copy" aria-label="copy-link">
-            </form>
+              <p>Restaurant Genre: <span>Sit Down</span></p>
+              <p>Food Genre: <span>American</span></p>
+              <p>Food Genre: <span>American</span></p>
+
+
             </div>
-            <div class="add-links__wrap">
+            <!-- <div class="add-links__wrap">
               <h3 class="add-links__h3"><i class="fa fa-desktop" aria-hidden="true"></i>Use the Button Widget</h3>
               <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on.</p>
             <form role="form" class="aside__form">
@@ -90,9 +74,10 @@
             <form role="form" class="aside__form">
               <input id="email__input" type="text" placeholder="bertha@gmail.com">
             </form>
-            </div>
+            </div> -->
           </aside>
         </div>
       </main>
+      <% include ./footer %>
 </body>
 </html>

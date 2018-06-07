@@ -22,45 +22,10 @@ body {
   border: 1px solid #ADB8CD
 }
 
-.header__btn {
-  border-right: solid 1px #ADB8CD;
-  width: 50px;
-  height: 50px;
-}
-
-.header__btn:hover {
-  background-color: #009EFF;
-}
-
-#fa-caret-left {
-  padding-right: .18rem;
-  color: #008EF6;
-  display: inline;
-}
-
-.search-bar i {
-  font-size: 1.5rem;
-  color: #ADB8CD;
-}
-
-.search-bar i:hover {
-  color: #FFFFFF;
-}
-
-.header-form {
+.header__article {
   display: flex;
-}
-
-.search-input-wrap {
-  width: 80%;
-  height: 50px;
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-left: .5rem;
-}
-
-.fa-search {
-  padding-right: .5rem;
 }
 
 .header-form__text {
@@ -103,22 +68,6 @@ body {
   color: #74CB17;
 }
 
-.second-nav__ul {
-  display: flex;
-  padding: 2.5rem;
-}
-
-.second-nav a {
-  padding-right: 4rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: #808995;
-}
-
-.second-nav a:hover {
-  border-bottom: solid 3px #00BCC6
-}
-
 .section-content {
   display: flex;
   align-items: center;
@@ -126,11 +75,12 @@ body {
 
 .profile-img {
   width: 15%;
-}
+  border-radius: 3rem;
+  padding: 1rem;}
 
-/*Job Description and Social Media Inputs and Btns*/
+/*Restaurant Description and Social Media Inputs and Btns*/
 .main-content {
-
+  height: 850px;
 }
 
 .line-break {
@@ -160,21 +110,23 @@ body {
 
 .main-content-article {
   width: 66%;
-  height: 760px;
+  height: 705px;
   background-color: #FFFFFF;
   margin-right: 4.5rem;
+  border-radius: 1rem;
 }
 
-.job-description__div {
+.restaurant-description__div {
   display: flex;
   align-items: center;
   padding: 2.5rem;
   border-bottom: 1px solid #ADB8CD;
   background-color: #FFFFFF;
+  border-radius: 1rem;
 }
 
-.job-description--color {
-  background-color: #6D7D97;
+.restaurant-description--color {
+  background-color: #440744;
   color: #FFFFFF;
 }
 
@@ -183,22 +135,27 @@ body {
 }
 
 .main-content__btn {
-  padding: .5rem;
-  background-color: #7885AE;
+  padding: .8rem;
+  border-radius: 1rem;
+  background-color: #9973D6;
   color: #FFFFFF;
+}
+
+.fa-pencil-alt {
+  padding-right: .6rem;
 }
 
 #description-target {
   min-width: 200px;
 }
 
+#main-content__img {
+  padding-left: 7rem;
+}
+
 .main-content__img {
   width: 16%;
   border-radius: 50%;
-}
-
-.main-content__figcaption {
-  display: inline-flex;
 }
 
 .main-content__btn i {
@@ -224,6 +181,13 @@ body {
   font-size: 1.2rem;
   color: #FFFFFF;
   letter-spacing: .05rem;
+}
+
+.fa-facebook-square,
+.fa-twitter,
+.fa-linkedin
+ {
+  padding-right: .5rem;
 }
 
 .social__btn i {
