@@ -1,0 +1,21 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+h1 {
+  font-family: 'Quando', cursive;
+  font-size: 2.8rem;
+}

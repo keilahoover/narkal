@@ -6,28 +6,55 @@
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
   <% include ./head %>
+  <link rel="stylesheet" href="/stylesheets/index.css">
 
 </head>
 
 <body>
-  <h1 class="logo">NARKAL</h1>
-  <section class="rest-container">
-    <h4>RESTAURANT</h4>
-    <button class="rest__signIn"><a href="./restaurant-signin">Sign In</a></button>
-    <button class="rest__signUp"><a href="./restaurant-signup">Sign Up</button>
-  </section>
-  <section class="user-container">
-    <h4>USER</h4>
-    <button class="user__signIn">Sign In</button>
-    <button class="rest__signUp">Sign Up</button>
-  </section>
-    <div id="map">
-    </div>
-  <section>
-    <img id="map-marker" src="/images/narkle_marker.png" />
-    <button class="social_btn"><a href="./facebook"><i class="fab fa-facebook-square"></i>Join with Facebook</a></button>
-    <button><a href="./restaurant-profile">Next ></a></button>
-  </section>
+  <header role="header" id="header">
+    <h4 class="logo">NARKAL</h4>
+  </header>
+  <nav class="nav-bar">
+
+  </nav>
+  <main role="main">
+    <section class="main__intro">
+      <h4 class="main__h4">A place to find health conscious and ethically sourced dining out options that fit YOUR lifestyle.</h4>
+    </section>
+    <section class="map-container">
+      <form class="main__form">
+        <label for="nav-bar__search"><i class="fas fa-search"></i></label>
+        <input type="search" id="nav-bar__search" placeholder="Zipcode (i.e. 80027)">
+      </form>
+      <div id="map"></div>
+      <img id="map-marker" src="/images/narkle_marker.png" />
+    </section>
+    <section class="rest-user-container">
+      <article class="rest-container">
+        <h4 class="main__h4">RESTAURANT</h4>
+        <button class="main__btn"><a href="./restaurant-signin">Sign In</a></button>
+        <p>OR</p>
+        <button class="main__btn"><a href="./restaurant-signup">Sign Up</a></button>
+        <button class="main__btn social__btn"><a href="./facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i>Join with Facebook</a></button>
+      </article>
+      <article class="user-container">
+        <h4 class="main__h4">USER</h4>
+        <button class="main__btn">Sign In</button>
+        <p>OR</p>
+        <button class="main__btn">Sign Up</button>
+        <button class="main__btn social_btn"><a href="./facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i>Join with Facebook</a></button>
+      </article>
+    </section>
+  </main>
+  <footer role="footer">
+    <p>Copyright&copy;2018</p>
+    <p>NARKAL</p>
+    <section>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-instagram"></i>
+    </section>
+  </footer>
   <script>
     var map;
 
@@ -37,7 +64,7 @@
           lat: -34.397,
           lng: 150.644
         },
-        zoom: 8
+        zoom: 10
       });
       infoWindow = new google.maps.InfoWindow;
 
@@ -83,7 +110,7 @@
       // }); -->
 
 
-      <!-- <form class="form" method="POST" action="./routes/users-signup">
+<!-- <form class="form" method="POST" action="./routes/users-signup">
         <label for="sign-up__email">Email</label>
         <input type="email" placeholder="narkal@me.com" value="email" class="sign-up__email">
         <label for="sign-up__password">Password</label>

@@ -6,20 +6,25 @@
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
   <% include ./head %>
+    <link rel="stylesheet" href="/stylesheets/rest-signin.css">
+
 
 </head>
 
 <body>
-  <h1 class="logo">RESTAURANT SIGN IN</h1>
-  <section class="login" id="login">
-    <form class="form__login" id="form__login" method="post" action="/">
-      <label for="login__email">Email</label>
-      <input type="email" placeholder="narkal@me.com" value="email" class="login__email" id="login__email">
-      <label for="login__password">Password</label>
-      <input type="password" placeholder="password" value="password" class="login__password" id="login__password">
-      <input class="login-btn" id="login__btn" type="submit" value="Sign In">
-    </form>
+  <section class="container">
+    <h1>RESTAURANT SIGN IN</h1>
+    <article class="login" id="login">
+      <form class="form__login" id="form__login" method="post" action="/">
+        <label for="login__email">Email</label>
+        <input type="email" placeholder="narkal@me.com" class="login__email" id="login__email">
+        <label for="login__password">Password</label>
+        <input type="password" placeholder="password" class="login__password" id="login__password">
+        <input class="login-btn" id="login__btn" type="submit" value="Sign In">
+      </form>
+    </article>
   </section>
   <script src="javascripts/rest-login.js"></script>
 </body>
+
 </html>
