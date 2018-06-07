@@ -54,10 +54,13 @@ header a {
   margin: .5rem 0 0 120rem;
 }
 
-
 .fa-user,
 .fa-utensils {
   padding-right: .5rem;
+}
+
+.header__a:hover {
+  color: #43C1BB;
 }
 
 .logo {
@@ -159,8 +162,16 @@ header a {
   padding-right: .5rem;
 }
 
-.fa-facebook-square {
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-instagram {
   padding-right: .5rem;
+}
+
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-instagram:hover {
+  color: #43C1BB;
 }
 
 footer {
@@ -171,5 +182,6 @@ footer {
   color: #FFFFFF;
   width: 100%;
   height: 100px;
+  font-size: 1.4rem;
   text-align: center;
 }
