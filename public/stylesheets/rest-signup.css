@@ -1,0 +1,40 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  background-image: url('http://cdn7.dissolve.com/p/D1292_16_002/D1292_16_002_0004_600.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signup {
+  padding: 8rem;
+  margin: 15rem 29rem;
+  background-color: #440744;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 0 4px #a6a6a6;
+}
+
+h1 {
+  font-family: 'Quando', cursive;
+  font-size: 2.8rem;
+}
+
+.form__signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup__input {
+  margin-bottom: 1rem;
+}
