@@ -14,7 +14,7 @@ $(document).ready(function() {
     user = {
       "first_name": firstName,
       "last_name": lastName,
-      "email_address": email,
+      "email": email,
       "password": password,
     }
 
@@ -28,10 +28,10 @@ $(document).ready(function() {
 
     $.ajax(options)
       .done(function() {
-        window.location.href="/"
+        window.location.href = "/restaurant-info/${id}";
       })
       .fail(($xhr) => {
-        window.location.href = "/restaurant-info";
+        window.location.href="/"
       })
   })
 })

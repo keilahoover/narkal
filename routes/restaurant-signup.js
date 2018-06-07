@@ -8,18 +8,18 @@ router.get('/', (req, res, next) => {
   knex('restusers')
     .select('*')
     .then((info) => {
+      console.log(info)
       res.render('restaurant-signup', {
         title: 'Restaurant Sign Up',
         info
       })
-      .catch((err) => `Restaurant sign in error --> ${err}`)
     })
+    .catch((err) => `Restaurant sign in error --> ${err}`)
 })
 
 
 router.post('/', (req, res, next) => {
   const givenPassword = req.body.password;
-
   bcrypt.hash(givenPassword, 12)
     .then((result) => {
       return knex('restusers').insert({
@@ -36,6 +36,7 @@ router.post('/', (req, res, next) => {
         last_name: user[0].last_name,
         email: user[0].email
       }
+      //res.setheaders w jwt
       res.send(newObj);
     })
     .catch((err) => {
