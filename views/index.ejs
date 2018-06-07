@@ -6,26 +6,29 @@
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
   <% include ./head %>
-  <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
 
 </head>
 
 <body>
-  <header role="header" id="header">
-    <h4 class="logo">NARKAL</h4>
+  <header role="header">
+    <div class="login-container">
+      <p class="header__p"><a href="./restaurant-signin"><i class="fas fa-utensils"></i>Restaurant Sign In</a></p>
+      <p class="header__p"><a href="./restaurant-signin"><i class="fas fa-user"></i>User Sign In</a></p>
+      <form class="main__form">
+        <label for="nav-bar__search"><i class="fas fa-search"></i></label>
+        <input type="search" id="nav-bar__search" placeholder="Zipcode (i.e. 80027)">
+      </form>
+    </div>
+      <div class="main-header">
+        <h4 class="logo">NARKAL</h4>
+      </div>
   </header>
-  <nav class="nav-bar">
-
-  </nav>
   <main role="main">
     <section class="main__intro">
       <h4 class="main__h4">A place to find health conscious and ethically sourced dining out options that fit YOUR lifestyle.</h4>
     </section>
     <section class="map-container">
-      <form class="main__form">
-        <label for="nav-bar__search"><i class="fas fa-search"></i></label>
-        <input type="search" id="nav-bar__search" placeholder="Zipcode (i.e. 80027)">
-      </form>
       <div id="map"></div>
       <img id="map-marker" src="/images/narkle_marker.png" />
     </section>
@@ -77,7 +80,7 @@
           };
 
           infoWindow.setPosition(pos);
-          infoWindow.setContent('Location found.');
+          infoWindow.setContent('Shine Restaurant');
           infoWindow.open(map);
           map.setCenter(pos);
         }, function() {

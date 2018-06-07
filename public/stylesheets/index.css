@@ -10,30 +10,95 @@ html {
 
 body {
   font-family: 'Ubuntu', sans-serif;
+  background-image: url('/images/glitter-bg.png');
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #EA593F;
   color: #FFFFFF;
   width: 100%;
-  height: 100px;
-  text-align: center;
+  height: 115px;
 }
+
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header__p {
+  padding-bottom: 0.8rem;
+}
+
+#nav-bar__search {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  padding: .3rem;
+  box-shadow: 2px 0 4px #a6a6a6;
+}
+
+.fa-search {
+  font-size: 1.8rem;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #FBFAF8;
+  margin: .5rem 0 0 120rem;
+}
+
+
+.fa-user,
+.fa-utensils {
+  padding-right: .5rem;
+}
+
+
+/* .main-header {
+  display: flex;
+  align-items: center;
+  margin: 4rem 2.5rem 3.3rem 0;
+} */
+
+/* .nav-bar {
+  display: flex;
+  font-size: 1.86rem;
+  padding: 2rem 0 0 2.5rem;
+}
+
+.nav-bar p {
+  color: #8B8B8B;
+  padding-right: 4rem;
+} */
 
 .logo {
   font-family: 'Quando', cursive;
-  font-size: 5rem;
-  padding-top: 2rem;
+  font-size: 8rem;
+  padding-bottom: 1rem;
+  margin-right: 82rem;
 }
 
 .main__intro {
   height: 152px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .main__h4 {
+  width: 50%;
   font-family: 'Quando', cursive;
   font-size: 2.8rem;
-  text-align: center;
+  color: #440744;
+  padding-top: 1.8rem;
+  /* text-align: center; */
 }
 
 .main__p {
@@ -41,11 +106,11 @@ header {
   text-align: center;
 }
 
-.main__form {
+/* .main__form {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .map-container {
   position: relative;
@@ -61,10 +126,6 @@ header {
   bottom: 12rem;
   left: 67rem;
   width: 6%;
-}
-
-.logo {
-  font-family: 'Quando', cursive;
 }
 
 .rest-user-container {
