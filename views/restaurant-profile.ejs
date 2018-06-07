@@ -2,130 +2,16 @@
 <html>
 <head>
   <title>Restaurant Profile</title>
-  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-  <link rel="stylesheet" type="text/css" href="./stylesheets/restaurant-profile.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:600" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <% include ./head %>
+  <link rel="stylesheet" href="/stylesheets/index.css">
+  <link rel="stylesheet" href="/stylesheets/restaurant-profile.css">
+
 </head>
 <body>
-  <div class="wrapper">
-    <nav class="side-nav">
-      <figure class="side-nav-profile">
-        <img class="side-nav-profile__img" src="img/ray-turner.jpg" alt="ray-the-eel-man">
-        <figcaption class="side-nav-profile__figcaption">Ray Turner</figcaption>
-        <i class="fa fa-angle-down" aria-hidden="true"></i>
-      </figure>
-      <div class="side-nav-main">
-        <p class="side-nav__p">Main</p>
-        <a href="#" class="side-nav--href"><i class="fa fa-home side-nav__i" aria-hidden="true"></i>HOME</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-briefcase side-nav__i" aria-hidden="true"></i>
-        JOBS</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-file-text-o side-nav__i" aria-hidden="true"></i>
-        RESUMES</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-thumb-tack side-nav__i" aria-hidden="true"></i>
-        TASKS</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-calendar side-nav__i" aria-hidden="true"></i>
-        CALENDAR</a>
-      </div>
-      <div class="side-nav-admin">
-        <p class="side-nav__p">Admin</p>
-        <a href="#" class="side-nav--href"><i class="fa fa-users side-nav__i" aria-hidden="true"></i>
-        USERS</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-map-marker side-nav__i" aria-hidden="true"></i>
-        LOCATIONS</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-leaf side-nav__i" aria-hidden="true"></i>
-        LEAVES</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-clipboard side-nav__i" aria-hidden="true"></i>
-        JOB BOARDS</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-share-alt side-nav__i" aria-hidden="true"></i>
-        SOCIAL</a>
-      </div>
-      <div class="side-nav-categories">
-        <p class="side-nav__p">Categories</p>
-        <a href="#" class="side-nav--href"><i class="fa fa-square side-nav__i" aria-hidden="true"></i>
-        Administrative</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-square side-nav__i" aria-hidden="true"></i>
-        Design</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-square side-nav__i" aria-hidden="true"></i>
-        Executives</a>
-        <a href="#" class="side-nav--href"><i class="fa fa-square side-nav__i" aria-hidden="true"></i>
-        Human Resources</a>
-      </div>
-    </nav>
-    <header class="header" role="header">
-      <div class="search-bar">
-          <button class="header__btn" aria-expand="true"><i class="fa fa-caret-left" id="fa-caret-left" aria-hidden="true"></i><i class="fa fa-bars" aria-hidden="true"></i></button>
-        <div class="search-input-wrap">
-          <form role="form" class="header-form">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input type="text" placeholder="Search for a job, task or resume" class="header-form__text" aria-label="search-bar">
-          </form>
-        </div>
-          <button class="header__btn">
-            <i class="fa fa-user-plus" aria-hidden="true"></i></button>
-          <button class="header__btn">
-            <i class="fa fa-calendar" aria-hidden="true"></i></button>
-          <button class="header__btn">
-            <i class="fa fa-th" aria-hidden="true"></i></button>
-      </div>
-      <div class="page-info">
-        <div class="main-title">
-        <h1 class="main-title__h1">Eel Fisherman</h1>
-        <p class="main-title__p"><i class="fa fa-map-marker" aria-hidden="true"></i>Rochester, NY - <span class="main-title__p--span">Preview this post</span></p>
-        </div>
-        <div class="page-edit">
-          <button class="page-edit__btn" aria-label="open-page-edit"><i class="fa fa-circle" aria-hidden="true"></i>
-          OPEN</button>
-          <button class="page-edit__btn"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
-          <button class="page-edit__btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-          <button class="page-edit__btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
-        </div>
-      </div>
-      <nav class="second-nav">
-        <div class="second-nav__ul">
-          <a href="#">SUMMARY</a>
-          <a href="#">APPLICANTS</a>
-          <a href="#">JOB BOARD</a>
-          <a href="#">INTERVIEWS</a>
-          <a href="#">ACTIVITY</a>
-          <a href="#">BROADCAST</a>
-          <a href="#">NOTIFICATIONS</a>
-        </div>
-      </nav>
-    </header>
+    <% include ./header %>
     <section class="section-content">
-      <article class="circle-graphs">
-        <div class="circle-graph__data">
-        <div class="circle-graph__text">
-          <p id="circle-graph__num">1,498</p>
-          <h2>APPLICATIONS</h2>
-        </div>
-        <svg class="circle-graph__svg"><circle cx="75" cy="75" r="60" stroke="#ADB8CD" fill="none" style="stroke-width: 10;"></circle><path d="M75,15 A60,60 0 1,1 26.458980337503156,110.26711513754839" stroke="#00BCC6" fill="none" style="stroke-width: 10;"></path></svg>
-        </div>
-      <div class="circle-graph__data">
-        <div class="circle-graph__text">
-          <p id="circle-graph__num">2,589</p>
-          <h2>INTERVIEWS</h2>
-        </div>
-        <svg class="circle-graph__svg"><circle cx="75" cy="75" r="60" stroke="#ADB8CD" fill="none" style="stroke-width: 10;"></circle><path d="M60,15 A60,60 0 1,1 26.458980337503156,110.26711513754839" stroke="#009FFB" fill="none" style="stroke-width: 10;"></path></svg>
-      </div>
-      <div class="circle-graph__data">
-        <div class="circle-graph__text">
-           <p id="circle-graph__num">523</p>
-          <h2>FORWARD</h2>
-        </div>
-        <svg class="circle-graph__svg"><circle cx="75" cy="75" r="60" stroke="#ADB8CD" fill="none" style="stroke-width: 10;"></circle><defs></defs><path d="M85,15 A60,60 0 1,1 26.458980337503156,110.26711513754839" stroke="#B55CB0" fill="none" style="stroke-width: 10;"></path></svg>
-      </div>
-      <form role="form" class="circle-graphs-form">
-        <input class="circle-graphs-form__input graph-input-style" type="submit" value="TOTALS - Out of 1,304 views" aria-label="see-all-totals">
-      </form>
-      </article>
-      <article class="bar-graph">
-        <img class="bar-graph__img" src="img/bar-graph.png" alt="bar-graph-data">
-        <form class="bar-graph-form" role="form">
-          <input class="bar-graph-form__input graph-input-style" type="submit" value="APPLICANTS/DAY" aria-label="applicants-compared-to-day">
-        </form>
+      <article class="header__article">
+        <img class="profile-img" src="images/shine-logo.jpg">
       </article>
     </section>
     <main class="main-content">
@@ -208,6 +94,5 @@
           </aside>
         </div>
       </main>
-    </div>
 </body>
 </html>

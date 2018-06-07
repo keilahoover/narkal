@@ -9,95 +9,11 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
-  color: #737987;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 10% 90%;
-  grid-template-rows: 200px 315px 850px;
-  background-color: #ECF2F7;
-  width: 100%;
-}
-
-.wrapper h2 {
-  font-size: 1.2rem;
-  font-family: "Open Sans", sans-serif;
-}
-
-/*Side Nav Bar*/
-.side-nav {
-  grid-column: 1/2;
-  grid-row: 1/4;
-  background-color: #343F54;
-}
-
-.side-nav-profile {
-  border-bottom: 2.5px solid #1f272f;
-  border-style: ridge;
-}
-
-.side-nav-profile__img {
-  border-radius: 50%;
-  margin: .8rem 3rem 0 3.3rem;
-  width: 40%;
-}
-
-.side-nav-profile__figcaption {
-  color: #ADB8CD;
-  padding: .8rem 0 1.5rem 3rem;
-  display: inline-flex;
-}
-
-.fa-angle-down {
-  color: #ADB8CD;
-  padding-left: .3rem;
-}
-
-.side-nav-main {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 2.5px solid #1f272f;
-  border-style: ridge;
-}
-
-.side-nav__p {
-  margin: 1rem;
-}
-
-.side-nav__i {
-  margin-right: .6rem;
-}
-
-.side-nav--href {
-  text-decoration: none;
-  color: #ADB8CD;
-  margin: 0 0 1.5rem 1rem;
-}
-
-.side-nav--href:hover {
-  color: #FFFFFF;
-}
-
-.side-nav-admin {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 2.5px solid #1f272f;
-  border-style: ridge;
-}
-
-.side-nav-categories {
-  display: flex;
-  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+  color: #440744;
 }
 
 /*Header section, including search bar and 2nd nav bar*/
-.header {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  background: #FFFFFF;
-}
 
 .search-bar {
   display: flex;
@@ -203,75 +119,18 @@ body {
   border-bottom: solid 3px #00BCC6
 }
 
-/*Circle and Bar Graphs*/
 .section-content {
-  grid-column: 2/3;
-  grid-row: 2/3;
   display: flex;
   align-items: center;
 }
 
-.circle-graphs {
-  display: flex;
-  position: relative;
-  align-self: center;
-  stroke-linecap: round;
-  margin-left: 4.5rem;
-}
-
-.circle-graph__data {
-  display: inline-block;
-  width: 180px;
-  position: relative;
-}
-
-.circle-graph__text {
-  position: absolute;
-  top: 8.5rem;
-  left: 2rem;
-}
-
-#circle-graph__num {
-  position: absolute;
-  font-size: 2rem;
-  bottom: 2rem;
-  left: 1rem;
-}
-
-.circle-graphs h2 {
-  position: absolute;
-  bottom: 1rem;
-}
-
-.circle-graphs-form {
-  position: absolute;
-  top: 14rem;
-  left: 14rem;
-}
-
-.bar-graph {
-  margin-left: 25rem
-}
-
-.bar-graph__img {
-  width: 65%;
-}
-
-.bar-graph-form {
-  padding: 2.5rem 0 0 7rem;
-}
-
-.graph-input-style {
-  padding: .8rem;
-  border: 1px solid #ADB8CD;
-  border-radius: 2rem;
-  font-weight: 600;
+.profile-img {
+  width: 15%;
 }
 
 /*Job Description and Social Media Inputs and Btns*/
 .main-content {
-  grid-column: 2/3;
-  grid-row: 3/4;
+
 }
 
 .line-break {
@@ -421,7 +280,7 @@ body {
     width: 80%;
 }
 
-@media screen and (max-width: 1110px) {
+/* @media screen and (max-width: 1110px) {
   .wrapper {
     display: grid;
     grid-template-columns: 100%;
@@ -451,7 +310,7 @@ body {
     background-color: #FFFFFF;
   }
 
-  #fa-caret-left {*/
+  #fa-caret-left {
     display: initial;
   }
 
@@ -547,4 +406,4 @@ body {
     display: flex;
     flex-direction: column;
   }
-}
+} */

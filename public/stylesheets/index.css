@@ -22,7 +22,7 @@ header {
   background-color: #EA593F;
   color: #FFFFFF;
   width: 100%;
-  height: 115px;
+  height: 130px;
 }
 
 header a {
@@ -32,6 +32,13 @@ header a {
 
 .header__p {
   padding-bottom: 0.8rem;
+}
+
+.logo {
+  font-family: 'Quando', cursive;
+  font-size: 8rem;
+  padding-bottom: 1rem;
+  margin-right: 82rem;
 }
 
 .logo__img {
@@ -59,7 +66,7 @@ header a {
   align-items: center;
   font-size: 1.5rem;
   color: #FBFAF8;
-  margin: .5rem 0 0 120rem;
+  margin: 1rem 0 0 93rem;
 }
 
 .fa-user,
@@ -69,13 +76,6 @@ header a {
 
 .header__a:hover {
   color: #43C1BB;
-}
-
-.logo {
-  font-family: 'Quando', cursive;
-  font-size: 8rem;
-  padding-bottom: 1rem;
-  margin-right: 82rem;
 }
 
 .main__intro {
