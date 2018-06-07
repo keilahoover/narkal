@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
           id: 1,
           restusers_id: 1,
           restName: 'Three Broomsticks',
-          restemail: 'threebrooms@hogmead.com',
+          email: 'threebrooms@hogmead.com',
           hoursOperation: 'Mon-Sun 9-5',
           streetAddress: '1000 Universal Studios Plaza',
           city: 'orlando',
