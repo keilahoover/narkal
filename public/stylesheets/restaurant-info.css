@@ -1,0 +1,84 @@
+ body {
+   font-family: 'Ubuntu', sans-serif;
+   color: #FFFFFF;
+   background-image: url('/images/glitter-bg-2.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .wrapper {
+   width: 100%;
+   margin: 6.6rem 8px 3rem 8px;
+}
+
+ .register-container {
+   border-radius: 2.3rem;
+   padding: 1.6rem;
+   background-color: #440744;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: solid;
+   width: 94%;
+   text-align: center;
+ }
+
+ .info__p {
+   font-family: 'Quando', cursive;
+   font-size: 2.6rem;
+ }
+
+ input[type="text"], input[type="email"] {
+   box-shadow: 2px 0 4px #a6a6a6;
+ }
+
+ input {
+   margin: 1rem 0.3rem 0 0;
+   font-size: 1.2rem;
+   font-family: 'Ubuntu', sans-serif;
+   padding: .3rem;
+ }
+
+ .basic-info--padding {
+    padding-bottom: 1.8rem;
+ }
+
+ label,
+ .expense__p {
+   font-size: 1.5rem;
+   padding-right: .3rem;
+ }
+
+ .profile-menu-container {
+   display: flex;
+   padding: .5rem 0 .5rem;
+   justify-content: center;
+   margin-left: 8rem;
+ }
+
+ .profile-img, .menu {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .expense--align {
+    display: flex;
+    align-items: center;
+ }
+
+ .next-btn {
+   background-color: #9973D6;
+  border-radius: .4rem;
+  font-size: 2rem;
+  margin-left: 86%;
+ }
+
+ .next-btn:hover {
+   background-color: #ac8dde;
+ }
+
+ .next-btn__a {
+   text-decoration: none;
+    color: #FFFFFF;
+ }

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Restaurant Profile</title>
   <% include ./head %>
-  <link rel="stylesheet" href="/stylesheets/index.css">
-  <link rel="stylesheet" href="/stylesheets/restaurant-profile.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/restaurant-profile.css">
 
 </head>
+
 <body>
-    <% include ./header %>
+  <% include ./header %>
     <section class="section-content">
       <article class="header__article">
         <img class="profile-img" src="images/shine-logo.jpg">
@@ -18,8 +20,8 @@
       <div class="article-aside-wrap">
         <article class="main-content-article">
           <div class="restaurant-description__div restaurant-description--color">
-              <h2 class="main-content__h2">Shine Restaurant</h2>
-              <button class="main-content__btn" aria-label="edit-description"><i class="fas fa-pencil-alt"></i>EDIT</button>
+            <h2 class="main-content__h2">Shine Restaurant</h2>
+            <button class="main-content__btn" aria-label="edit-description"><i class="fas fa-pencil-alt"></i>EDIT</button>
           </div>
           <div class="restaurant-description__div">
             <h2 class="main-content__h2">LOCATION</h2>
@@ -47,37 +49,35 @@
             <img id="main-content__img" src="images/diners_choice.png">
           </div>
         </article>
-          <aside class="main-content__aside">
-            <div class="social">
-              <button class="social__btn facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i>Post to Facebook</button>
-              <button class="social__btn twitter"><i class="fab fa-twitter" aria-hidden="true"></i>Tweet this Job</button>
-              <button class="social__btn linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i>Post to Linkedin</button>
-            </div>
-            <div class="add-links__wrap">
-              <p>Restaurant Genre: <span>Sit Down</span></p>
-              <p>Food Genre: <span>American</span></p>
-              <p>Food Genre: <span>American</span></p>
-
-
-            </div>
-            <!-- <div class="add-links__wrap">
-              <h3 class="add-links__h3"><i class="fa fa-desktop" aria-hidden="true"></i>Use the Button Widget</h3>
-              <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on.</p>
-            <form role="form" class="aside__form">
-              <input type="text" placeholder="http://loremipsum.dol/sit.ameteur.io" aria-label="add-link-to-embed">
-              <input type="submit" value="Copy" aria-label="copy-link">
-            </form>
-            </div>
-            <div class="add-links__wrap">
-              <h3 class="add-links__h3"><i class="fa fa-paper-plane" aria-hidden="true"></i>Upload Resumes by Email</h3>
-              <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on.</p>
-            <form role="form" class="aside__form">
-              <input id="email__input" type="text" placeholder="bertha@gmail.com">
-            </form>
-            </div> -->
-          </aside>
-        </div>
-      </main>
-      <% include ./footer %>
+        <aside class="main-content__aside">
+          <div class="social">
+            <button class="social__btn facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i>Facebook</button>
+            <button class="social__btn twitter"><i class="fab fa-twitter" aria-hidden="true"></i>Twitter</button>
+            <button class="social__btn linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i>Instagram</button>
+          </div>
+          <div class="add-links__wrap">
+            <p>Restaurant Genre: <span>Sit Down</span></p>
+            <p>Food Genre: <span>American</span></p>
+            <p>Specialties: <span>Happy Hour</span> - <span>Kombucha</span></p>
+            <p>Culture & Convenience: <span>American</span></p>
+            <p>Dietary:
+              <span>Farm to Table Focused</span> -
+              <span>Vegan Menu Options</span> -
+              <span>Vegetarian Menu Options</span> -
+              <span>Organic Menu Options</span> -
+              <span>GF Menu Options</span> -
+              <span>Paleo Menu Options</span> -
+              <span>No MSG</span> -
+              <span>Grass Fed Beef</span> -
+              <span>Locally Sourced Meat</span> -
+              <span>Alcohol</span> -
+            </p>
+            <p>Culture & Convenience: <span>American</span></p>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <% include ./footer %>
 </body>
+
 </html>
