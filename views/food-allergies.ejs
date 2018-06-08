@@ -4,24 +4,25 @@
     <meta charset="utf-8">
     <title></title>
     <% include ./head %>
+    <link rel="stylesheet" href="/stylesheets/food-allergies.css">
   </head>
   <body>
-    <p>Food Allergies</p>
-    <form class="foodAllergies" role="form">
-      <label for="soy">Soy</label>
-      <input type="checkbox" class="foodAllergies__checkbox soy">
-      <label for="dairy">Dairy</label>
-      <input type="checkbox" class="foodAllergies__checkbox dairy">
-      <label for="peanut">Peanut</label>
-      <input type="checkbox" class="foodAllergies__checkbox peanut">
-      <label for="tree-nut">Tree Nut</label>
-      <input type="checkbox" class="foodAllergies__checkbox tree-nut">
-      <label for="gluten">Gluten</label>
-      <input type="checkbox" class="foodAllergies__checkbox gluten">
-      <label for="seafood">Seafood</label>
-      <input type="checkbox" class="foodAllergies__checkbox seafood">
-    </form>
-    <section>
+    <section class="allergies-container">
+      <p>Food Allergies</p>
+      <form role="form">
+        <label for="soy">Soy</label>
+        <input type="checkbox" class="foodAllergies__checkbox soy">
+        <label for="dairy">Dairy</label>
+        <input type="checkbox" class="foodAllergies__checkbox dairy">
+        <label for="peanut">Peanut</label>
+        <input type="checkbox" class="foodAllergies__checkbox peanut">
+        <label for="tree-nut">Tree Nut</label>
+        <input type="checkbox" class="foodAllergies__checkbox tree-nut">
+        <label for="gluten">Gluten</label>
+        <input type="checkbox" class="foodAllergies__checkbox gluten">
+        <label for="seafood">Seafood</label>
+        <input type="checkbox" class="foodAllergies__checkbox seafood">
+      </form>
       <button><a href="/dietary">Next ></button>
     </section>
   </body>

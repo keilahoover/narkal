@@ -6,9 +6,13 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.8rem;
   color: #FFFFFF;
-  background-image: url('http://cdn7.dissolve.com/p/D1292_16_002/D1292_16_002_0004_600.jpg');
+  background-image: url('/images/glitter-bg-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header {
+  font-size: 3rem;
 }
 
 .signup {

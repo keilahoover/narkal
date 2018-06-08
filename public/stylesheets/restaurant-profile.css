@@ -5,21 +5,15 @@
 }
 
 html {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 body {
   font-family: "Ubuntu", sans-serif;
   color: #440744;
-}
-
-/*Header section, including search bar and 2nd nav bar*/
-
-.search-bar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border: 1px solid #ADB8CD
+  background-image: url('/images/glitter-bg-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header__article {
@@ -28,55 +22,13 @@ body {
   align-items: center;
 }
 
-.header-form__text {
-  text-overflow: ellipsis;
-}
-
-.page-info {
-  padding: 2.5rem 2.5rem 1rem 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-title__h1 {
-  margin-bottom: .8rem;
-  font-family: "Open Sans", sans-serif;
-}
-
-.fa-map-marker {
-  padding-right: .5rem;
-}
-
-.main-title__p--span {
-  color: #55C6F1;
-}
-
-.page-edit__btn {
-  border: solid 1px #ADB8CD;
-  border-radius: 2rem;
-  padding: .8rem;
-  color: #808995;
-}
-
-.page-edit__btn i {
-  padding: .1rem;
-  font-size: 1.2rem;
-}
-
-.fa-circle {
-  color: #74CB17;
-}
-
-.section-content {
-  display: flex;
-  align-items: center;
-}
-
 .profile-img {
+  margin-top: 3rem;
   width: 15%;
   border-radius: 3rem;
-  padding: 1rem;}
+  padding: 1rem;
+  box-shadow: 2px 0 4px #a6a6a6;
+}
 
 /*Restaurant Description and Social Media Inputs and Btns*/
 .main-content {
@@ -132,6 +84,11 @@ body {
 
 .main-content__h2 {
   width: 200px;
+  font-size: 2.3rem;
+}
+
+.main-content__p {
+  font-size: 1.8rem;
 }
 
 .main-content__btn {
@@ -176,16 +133,18 @@ body {
 .social__btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #FFFFFF;
   letter-spacing: .05rem;
 }
 
 .fa-facebook-square,
 .fa-twitter,
-.fa-linkedin
+.fa-linkedin,
+.fa-angle-right
  {
   padding-right: .5rem;
 }
@@ -206,168 +165,23 @@ body {
   background-color: #007FC3;
 }
 
-.add-links__wrap {
+.narkons-wrapper {
+  font-size: 1.5rem;
+}
+
+.narkons--align {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 3.3rem;
-  line-height: 1.5rem;
-  border-bottom: 1px solid #ADB8CD;
+  flex-direction: row-reverse;
 }
 
-.add-links__wrap i {
-  padding-right: .5rem;
+.narkons__ul {
+  list-style: none;
 }
 
-.add-links__h3 {
-  padding-bottom: .8rem;
-  padding-top: 3.14rem;
+.narkons__ul li {
+  padding: .5rem;
 }
 
-.aside__form {
-  display: flex;
-  padding-top: 1.3rem;
-  width: 100%;
+.narkons__span {
+  font-size: 2rem;
 }
-
-.aside__form input[type="text"] {
-  width: 77%;
-}
-
-.aside__form input[type="submit"] {
-  padding: 1rem;
-  background-color: #00BCC6;
-  color: #FFFFFF;
-}
-
-#email__input {
-    padding: 1rem;
-    width: 80%;
-}
-
-/* @media screen and (max-width: 1110px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-  }
-
-  .side-nav {
-    visibility: hidden;
-  }
-
-  .header {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .section-content {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .main-content {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
- button {
-    background-color: #FFFFFF;
-  }
-
-  #fa-caret-left {
-    display: initial;
-  }
-
-  .header-form__text {
-    visibility: hidden;
-  }
-
-  .bar-graph__img {
-    width: 300px;
-  }
-
-  .bar-graph {
-    margin-left: 8rem;
-  }
-
-  .graph-input-style {
-    background-color: #FFFFFF;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .section-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .circle-graphs {
-  position: relative;
-  stroke-linecap: round;
-  margin-left: 8.5rem;
-  padding-top: 12px;
-  }
-
-  .bar-graph {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 917px) {
-  .article-aside-wrap {
-    display: flex;
-    flex-direction: column;
-    padding: 4.5rem 0 0 4.5rem;
-  }
-
-  .main-content-article {
-    width: 94%;
-  }
-
-  .main-content__aside {
-    width: 100%;
-  }
-
- .social {
-    padding-top: 1.5rem;
-    width: 94%;
-  }
-
-  .social__btn i {
-    padding-right: 27px;
-  }
-}
-
-@media screen and (max-width: 888px) {
-
-}
-
-@media screen and (max-width: 768px) {
-  .wrapper {
-    width: 120%;
-  }
-
-@media screen and (max-width: 320px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 225px 315px 400px;
-    width: 120%;
-  }
-
-  .header {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .section-content {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .page-info {
-    display: flex;
-    flex-direction: column;
-  }
-} */
