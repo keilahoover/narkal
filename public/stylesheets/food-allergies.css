@@ -8,17 +8,42 @@ body {
 
 .wrapper {
   width: 100%;
-  margin: 6.6rem 8px 3rem 8px;
 }
 
 .allergies-container {
   border-radius: 2.3rem;
+  margin: 9rem 8px 6rem 8px;
   padding: 1.6rem;
   background-color: #440744;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid;
-  width: 94%;
+  border: solid #9973D6;
+  /* width: 100%; */
   text-align: center;
+}
+
+.info__p {
+  font-family: 'Quando', cursive;
+  font-size: 2.6rem;
+}
+
+.allergies {
+  padding-bottom: 3rem;
+}
+
+.next-btn {
+  background-color: #9973D6;
+ border-radius: .4rem;
+ font-size: 2rem;
+ margin-left: 86%;
+}
+
+.next-btn:hover {
+  background-color: #ac8dde;
+}
+
+.next-btn__a {
+  text-decoration: none;
+   color: #FFFFFF;
 }
