@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 body {
@@ -15,12 +15,6 @@ body {
 
 /*Header section, including search bar and 2nd nav bar*/
 
-.search-bar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border: 1px solid #ADB8CD
-}
 
 .header__article {
   display: flex;
@@ -28,50 +22,10 @@ body {
   align-items: center;
 }
 
-.header-form__text {
-  text-overflow: ellipsis;
-}
-
-.page-info {
-  padding: 2.5rem 2.5rem 1rem 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-title__h1 {
-  margin-bottom: .8rem;
-  font-family: "Open Sans", sans-serif;
-}
-
-.fa-map-marker {
-  padding-right: .5rem;
-}
-
-.main-title__p--span {
-  color: #55C6F1;
-}
-
-.page-edit__btn {
-  border: solid 1px #ADB8CD;
-  border-radius: 2rem;
-  padding: .8rem;
-  color: #808995;
-}
-
-.page-edit__btn i {
-  padding: .1rem;
-  font-size: 1.2rem;
-}
-
-.fa-circle {
-  color: #74CB17;
-}
-
-.section-content {
+/* .section-content {
   display: flex;
   align-items: center;
-}
+} */
 
 .profile-img {
   width: 15%;
