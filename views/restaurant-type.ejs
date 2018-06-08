@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <% include ./head %>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <% include ./head %>
+    <link rel="stylesheet" href="/stylesheets/restaurant-type.css">
+</head>
+
+<body>
+  <section class="rest-type-container">
     <p>Restaurant Genre</p>
     <form class="restaurant-type" role="form">
       <label for="counter-service">Counter Service</label>
@@ -33,9 +37,8 @@
       <label for="cannabis-tobacco">Cannabis & Tobacco</label>
       <input type="checkbox" class="restaurant-type__checkbox cannabis-tobacco">
     </form>
-
-    <section>
       <button><a href="/food-type">Next ></button>
-    </section>
-  </body>
+  </section>
+</body>
+
 </html>

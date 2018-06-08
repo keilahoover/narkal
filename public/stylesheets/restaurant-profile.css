@@ -16,8 +16,6 @@ body {
   background-repeat: no-repeat;
 }
 
-
-
 .header__article {
   display: flex;
   flex-direction: column;
