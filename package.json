@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev-start": "nodemon ./bin/www",
     "knex": "knex",
-    "heroku-postbuild": "knex migrate:rollback; knex migreate:latest; knex seed:run"
+    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -27,6 +27,6 @@
     "psql": "0.0.1"
   },
   "engines": {
-    "node": "v9.5.0"
+    "node": "v9.11.1"
   }
 }

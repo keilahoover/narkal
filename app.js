@@ -1,5 +1,6 @@
 'use strict';
 
+require('dotenv').config(); // require and init
 const jwt = require('jsonwebtoken');
 const createError = require('http-errors');
 const express = require('express');
@@ -10,7 +11,6 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const FacebookStrategy = require('passport-facebook').Strategy;
 const logger = require('morgan');
-require('dotenv').config(); // require and init
 const indexRouter = require('./routes/index');
 const userlogin = require('./routes/user-login');
 const restlogin = require('./routes/rest-login');
@@ -83,11 +83,7 @@ app.use('/specialties', specialtiesRouter);
 app.use('/restaurant-signin', restaurantSignInRouter);
 
 
-const port = process.env.PORT || 8080;
 
-app.listen(port, () => {
-  console.log('Listening on port', port);
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
