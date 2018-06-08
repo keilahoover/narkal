@@ -38,7 +38,7 @@ passport.use(new FacebookStrategy(
   {
     clientID: '170539890307175',
     clientSecret: 'eec4a6c13f6fad6b3c9a3cbbf327017d',
-    callbackURL: 'http://localhost:3000/facebook/callback',
+    callbackURL: 'https://narkal.herokuapp.com/facebook/callback',
     userAgent: 'Narkal'
   },
 
